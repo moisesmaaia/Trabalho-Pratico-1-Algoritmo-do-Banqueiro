@@ -19,6 +19,7 @@ public class Customer
     {
         while (true)
         {
+            // gera uma solicitação aleatória respeitando o need atual
             int[] request = new int[numberOfResources];
             int[] need = bank.GetNeed(id);
 
@@ -31,6 +32,7 @@ public class Customer
 
             Thread.Sleep(500);
 
+            // libera uma quantidade aleatória do que foi solicitado
             int[] release = new int[numberOfResources];
 
             for (int i = 0; i < numberOfResources; i++)

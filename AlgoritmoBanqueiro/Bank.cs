@@ -10,7 +10,7 @@ public class Bank
     private int[,] allocation;
     private int[,] need;
 
-    private readonly object mutex = new object();
+    private readonly object mutex = new object(); // garante acesso exclusivo às estruturas compartilhadas
 
     private Random random = new Random();
 
@@ -25,6 +25,7 @@ public class Bank
         allocation = new int[NUMBER_OF_CUSTOMERS, NUMBER_OF_RESOURCES];
         need = new int[NUMBER_OF_CUSTOMERS, NUMBER_OF_RESOURCES];
 
+        // inicializa maximum aleatoriamente e need igual a maximum (nada alocado ainda)
         for (int i = 0; i < NUMBER_OF_CUSTOMERS; i++)
         {
             for (int j = 0; j < NUMBER_OF_RESOURCES; j++)
@@ -39,6 +40,7 @@ public class Bank
     {
         lock (mutex)
         {
+            // rejeita se a solicitação excede o need ou os recursos disponíveis
             for (int i = 0; i < NUMBER_OF_RESOURCES; i++)
             {
                 if (request[i] > need[customer_num, i])
@@ -48,6 +50,7 @@ public class Bank
                     return -1;
             }
 
+            // simula a alocação
             for (int i = 0; i < NUMBER_OF_RESOURCES; i++)
             {
                 available[i] -= request[i];
@@ -55,6 +58,7 @@ public class Bank
                 need[customer_num, i] -= request[i];
             }
 
+            // confirma se o estado continua seguro; caso contrário, desfaz
             if (IsSafe())
             {
                 Console.WriteLine($"Cliente {customer_num}: solicitação CONCEDIDA [{string.Join(", ", request)}]");
@@ -76,6 +80,7 @@ public class Bank
     {
         lock (mutex)
         {
+            // não permite liberar mais do que foi alocado
             for (int i = 0; i < NUMBER_OF_RESOURCES; i++)
             {
                 if (release[i] > allocation[customer_num, i])
@@ -93,6 +98,7 @@ public class Bank
         }
     }
 
+    // algoritmo de segurança que verifica se existe uma sequência segura de execução
     private bool IsSafe()
     {
         int[] work = new int[NUMBER_OF_RESOURCES];
@@ -108,6 +114,7 @@ public class Bank
             {
                 if (!finish[i])
                 {
+                    // verifica se o cliente pode concluir com os recursos disponíveis
                     bool canFinish = true;
 
                     for (int j = 0; j < NUMBER_OF_RESOURCES; j++)
@@ -121,6 +128,7 @@ public class Bank
 
                     if (canFinish)
                     {
+                        // simula conclusão: devolve os recursos alocados
                         for (int j = 0; j < NUMBER_OF_RESOURCES; j++)
                             work[j] += allocation[i, j];
 
@@ -134,6 +142,7 @@ public class Bank
                 break;
         }
 
+        // seguro se todos os clientes conseguem concluir
         for (int i = 0; i < NUMBER_OF_CUSTOMERS; i++)
         {
             if (!finish[i])

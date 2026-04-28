@@ -12,6 +12,7 @@ class Program
             return;
         }
 
+        // inicializa os recursos disponíveis a partir dos argumentos da linha de comando
         int[] resources = new int[args.Length];
 
         for (int i = 0; i < args.Length; i++)
@@ -19,6 +20,7 @@ class Program
 
         Bank bank = new Bank(resources);
 
+        // cria e inicia uma thread por cliente
         Thread[] threads = new Thread[5];
 
         for (int i = 0; i < 5; i++)
