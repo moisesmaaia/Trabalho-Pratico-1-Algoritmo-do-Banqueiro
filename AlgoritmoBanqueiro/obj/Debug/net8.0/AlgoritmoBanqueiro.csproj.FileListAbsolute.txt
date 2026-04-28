@@ -1,0 +1,14 @@
+C:\Users\samue\source\repos\TrabalhoPratico1_SO\AlgoritmoBanqueiro\bin\Debug\net8.0\AlgoritmoBanqueiro.exe
+C:\Users\samue\source\repos\TrabalhoPratico1_SO\AlgoritmoBanqueiro\bin\Debug\net8.0\AlgoritmoBanqueiro.deps.json
+C:\Users\samue\source\repos\TrabalhoPratico1_SO\AlgoritmoBanqueiro\bin\Debug\net8.0\AlgoritmoBanqueiro.runtimeconfig.json
+C:\Users\samue\source\repos\TrabalhoPratico1_SO\AlgoritmoBanqueiro\bin\Debug\net8.0\AlgoritmoBanqueiro.dll
+C:\Users\samue\source\repos\TrabalhoPratico1_SO\AlgoritmoBanqueiro\bin\Debug\net8.0\AlgoritmoBanqueiro.pdb
+C:\Users\samue\source\repos\TrabalhoPratico1_SO\AlgoritmoBanqueiro\obj\Debug\net8.0\AlgoritmoBanqueiro.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\samue\source\repos\TrabalhoPratico1_SO\AlgoritmoBanqueiro\obj\Debug\net8.0\AlgoritmoBanqueiro.AssemblyInfoInputs.cache
+C:\Users\samue\source\repos\TrabalhoPratico1_SO\AlgoritmoBanqueiro\obj\Debug\net8.0\AlgoritmoBanqueiro.AssemblyInfo.cs
+C:\Users\samue\source\repos\TrabalhoPratico1_SO\AlgoritmoBanqueiro\obj\Debug\net8.0\AlgoritmoBanqueiro.csproj.CoreCompileInputs.cache
+C:\Users\samue\source\repos\TrabalhoPratico1_SO\AlgoritmoBanqueiro\obj\Debug\net8.0\AlgoritmoBanqueiro.dll
+C:\Users\samue\source\repos\TrabalhoPratico1_SO\AlgoritmoBanqueiro\obj\Debug\net8.0\refint\AlgoritmoBanqueiro.dll
+C:\Users\samue\source\repos\TrabalhoPratico1_SO\AlgoritmoBanqueiro\obj\Debug\net8.0\AlgoritmoBanqueiro.pdb
+C:\Users\samue\source\repos\TrabalhoPratico1_SO\AlgoritmoBanqueiro\obj\Debug\net8.0\AlgoritmoBanqueiro.genruntimeconfig.cache
+C:\Users\samue\source\repos\TrabalhoPratico1_SO\AlgoritmoBanqueiro\obj\Debug\net8.0\ref\AlgoritmoBanqueiro.dll
