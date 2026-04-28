@@ -65,14 +65,14 @@ cd Trabalho-Pratico-1-Algoritmo-do-Banqueiro
 4. Execute o programa com o comando:
 ```
 cd AlgoritmoBanqueiro
-dotnet run <quantidade_recurso_1> <quantidade_recurso_2> <quantidade_recurso_3>
+dotnet run -- <quantidade_recurso_1> <quantidade_recurso_2> <quantidade_recurso_3>
 
 ```
 
 5. Exemplo prático:
 ```
 cd AlgoritmoBanqueiro
-dotnet run 10 5 7
+dotnet run -- 10 5 7
 ```
 
 No exemplo acima, o sistema será iniciado com:

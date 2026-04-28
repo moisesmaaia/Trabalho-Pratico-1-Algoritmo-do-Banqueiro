@@ -12,3 +12,4 @@ C:\Users\samue\source\repos\TrabalhoPratico1_SO\AlgoritmoBanqueiro\obj\Debug\net
 C:\Users\samue\source\repos\TrabalhoPratico1_SO\AlgoritmoBanqueiro\obj\Debug\net8.0\AlgoritmoBanqueiro.pdb
 C:\Users\samue\source\repos\TrabalhoPratico1_SO\AlgoritmoBanqueiro\obj\Debug\net8.0\AlgoritmoBanqueiro.genruntimeconfig.cache
 C:\Users\samue\source\repos\TrabalhoPratico1_SO\AlgoritmoBanqueiro\obj\Debug\net8.0\ref\AlgoritmoBanqueiro.dll
+C:\Users\samue\source\repos\TrabalhoPratico1_SO\AlgoritmoBanqueiro\obj\Debug\net8.0\AlgoritmoBanqueiro.sourcelink.json
